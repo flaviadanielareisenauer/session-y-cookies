@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
-    <%- include('./partials/header') %>
-<body class="<%= locals.colorFondo ? colorFondo: null %>">
+  <%- include('./partials/head') %> <%- include('./partials/header') %>
+
+  <body class="<%= locals.colorFondo ? colorFondo: null %>">
     <div class="container-fluid w-50 form-control text-center">
-        <p><b> <%= nombre %>  </b> gracias por visitarnos.</p>
-        <a href="/user/reset" class="btn btn-danger">Olvidar el color</a>
+      <p><b> <%= nombre %> </b> gracias por visitarnos.</p>
+      <a href="/user/reset" class="btn btn-danger">Olvidar el color</a>
     </div>
-    
-</body>
+  </body>  
 </html>
